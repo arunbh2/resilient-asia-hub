@@ -617,4 +617,79 @@ a.page-number {
     }
     
     .expert-section {
-        grid-template-
+        grid-template-columns: 1fr;
+    }
+    
+    .expert-avatar {
+        margin-top: 1rem;
+    }
+    
+    .avatar-circle {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-dropdown {
+        width: 100%;
+    }
+    
+    .filter-dropdown select {
+        width: 100%;
+    }
+    
+    .theme-navigation {
+        padding-bottom: 0;
+    }
+    
+    .theme-tab {
+        padding: 1rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .knowledge-hero .big-text {
+        font-size: 2rem;
+    }
+    
+    .card-meta, .resource-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .expert-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .newsletter-section {
+        padding: 1.5rem;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 1.3rem;
+    }
+}
