@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Repository | ResilientAsia Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/knowledge.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts fallback for Georgia and Impact -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <div class="logo">
+                    <div class="logo-small">Practical</div>
+                    <div class="logo-big">ACTION</div>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="knowledge.html" class="active">Knowledge</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="tools.html">Tools &amp; Training</a></li>
+                <li><a href="donors.html">Donors</a></li>
+                <li><a href="#connect" class="cta-button">Connect</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
 
+    <section class="hero knowledge-hero">
+        <div class="hero-content">
+            <span class="small-text">climate adaptation knowledge</span>
+            <h1 class="big-text">RESILIENCE REPOSITORY</h1>
+            <p>Discover practical solutions, case studies, and research for building climate resilience in Asia</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Search and Filter Section -->
+        <div class="search-filter-bar">
+            <div class="search-box">
+                <input type="text" placeholder="Search knowledge resources...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="filter-dropdown">
+                    <select>
+                        <option value="">Topic</option>
+                        <option value="early-warning">Early Warning Systems</option>
+                        <option value="nature-based">Nature-Based Solutions</option>
+                        <option value="climate-risk">Climate Risk Planning</option>
+                        <option value="risk-financing">Risk Financing</option>
+                        <option value="infrastructure">Resilient Infrastructure</option>
+                        <option value="urban">Urban Resilience</option>
+                        <option value="waste">Waste Management</option>
+                    </select>
+                </div>
+                
+                <div class="filter-dropdown">
+                    <select>
+                        <option value="">Resource Type</option>
+                        <option value="case-study">Case Studies</option>
+                        <option value="toolkit">Toolkits</option>
+                        <option value="report">Reports</option>
+                        <option value="policy-brief">Policy Briefs</option>
+                        <option value="video">Videos</option>
+                        <option value="impact-study">Impact Studies</option>
+                    </select>
+                </div>
+                
+                <div class="filter-dropdown">
+                    <select>
+                        <option value="">Region</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="india">India</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="philippines">Philippines</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="vietnam">Vietnam</option>
+                    </select>
+                </div>
+                
+                <button class="filter-button">Apply Filters</button>
+            </div>
+        </div>
+        
+        <!-- Featured Content Section -->
+        <section class="featured-section">
+            <h2 class="section-title">Featured Resources</h2>
+            
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="card-image blue-bg">
+                        <span class="resource-tag">CASE STUDY</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="topic-label blue-label">EARLY WARNING SYSTEMS</span>
+                        <h3>Community-based flood alert systems: Lessons from Bangladesh</h3>
+                        <p>This case study examines how local communities in Bangladesh developed low-cost early warning systems that reduced flood damage by 60% and saved thousands of lives.</p>
+                        <div class="card-meta">
+                            <span class="publication-info">Published March 2025 · 12 min read</span>
+                            <a href="#" class="resource-link blue-link">Read Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-image green-bg">
+                        <span class="resource-tag">TOOLKIT</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="topic-label green-label">NATURE-BASED SOLUTIONS</span>
+                        <h3>Urban mangrove restoration: Implementation guide for coastal cities</h3>
+                        <p>A comprehensive toolkit for city planners and community organizations to implement mangrove restoration projects that enhance coastal protection.</p>
+                        <div class="card-meta">
+                            <span class="publication-info">Updated February 2025 · 8 resources</span>
+                            <a href="#" class="resource-link green-link">Download Toolkit →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Thematic Knowledge Section -->
+        <section class="thematic-section">
+            <h2 class="section-title">Knowledge by Theme</h2>
+            
+            <div class="theme-navigation">
+                <a href="#" class="theme-tab active blue-tab">Early Warning Systems</a>
+                <a href="#" class="theme-tab">Nature-Based Solutions</a>
+                <a href="#" class="theme-tab">Climate Risk Planning</a>
+                <a href="#" class="theme-tab">Risk Financing</a>
+                <a href="#" class="theme-tab">Resilient Infrastructure</a>
+                <a href="#" class="theme-tab">Urban Resilience</a>
+                <a href="#" class="theme-tab">Waste Management</a>
+            </div>
+            
+            <div class="resource-grid">
+                <!-- Resource Card 1 -->
+                <div class="resource-card">
+                    <div class="resource-icon blue-icon">
+                        <span>EWS</span>
+                    </div>
+                    <div class="resource-content">
+                        <span class="resource-type blue-type">REPORT</span>
+                        <h3>Effectiveness of SMS-based flood warnings in rural communities</h3>
+                        <div class="resource-meta">
+                            <span class="meta-info">January 2025 · 24 pages</span>
+                            <a href="#" class="resource-link blue-link">View →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resource Card 2 -->
+                <div class="resource-card">
+                    <div class="resource-icon blue-icon">
+                        <span>EWS</span>
+                    </div>
+                    <div class="resource-content">
+                        <span class="resource-type blue-type">CASE STUDY</span>
+                        <h3>Low-cost river monitoring stations built by local communities</h3>
+                        <div class="resource-meta">
+                            <span class="meta-info">February 2025 · 8 min read</span>
+                            <a href="#" class="resource-link blue-link">View →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resource Card 3 -->
+                <div class="resource-card">
+                    <div class="resource-icon blue-icon">
+                        <span>EWS</span>
+                    </div>
+                    <div class="resource-content">
+                        <span class="resource-type blue-type">TOOLKIT</span>
+                        <h3>DIY warning system implementation guide for coastal villages</h3>
+                        <div class="resource-meta">
+                            <span class="meta-info">March 2025 · 6 resources</span>
+                            <a href="#" class="resource-link blue-link">View →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resource Card 4 -->
+                <div class="resource-card">
+                    <div class="resource-icon blue-icon">
+                        <span>EWS</span>
+                    </div>
+                    <div class="resource-content">
+                        <span class="resource-type blue-type">VIDEO</span>
+                        <h3>Training video: Maintaining community early warning networks</h3>
+                        <div class="resource-meta">
+                            <span class="meta-info">January 2025 · 18 minutes</span>
+                            <a href="#" class="resource-link blue-link">Watch →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resource Card 5 -->
+                <div class="resource-card">
+                    <div class="resource-icon blue-icon">
+                        <span>EWS</span>
+                    </div>
+                    <div class="resource-content">
+                        <span class="resource-type blue-type">POLICY BRIEF</span>
+                        <h3>Integrating local and national early warning systems: Policy recommendations</h3>
+                        <div class="resource-meta">
+                            <span class="meta-info">March 2025 · 12 pages</span>
+                            <a href="#" class="resource-link blue-link">View →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resource Card 6 -->
+                <div class="resource-card">
+                    <div class="resource-icon blue-icon">
+                        <span>EWS</span>
+                    </div>
+                    <div class="resource-content">
+                        <span class="resource-type blue-type">IMPACT STUDY</span>
+                        <h3>Economic benefits of early warning systems: 5-year analysis</h3>
+                        <div class="resource-meta">
+                            <span class="meta-info">February 2025 · 20 pages</span>
+                            <a href="#" class="resource-link blue-link">View →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <span class="page-number active">1</span>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-number">8</a>
+            </div>
+        </section>
+        
+        <!-- Expert Contribution Section -->
+        <section class="expert-section">
+            <div class="expert-content">
+                <span class="feature-label">expert perspective</span>
+                <h2 class="feature-title">KNOWLEDGE SPOTLIGHT</h2>
+                <h3>Integrating indigenous knowledge into early warning systems</h3>
+                <p>Dr. Mei Lin shares insights on how traditional ecological knowledge is enhancing the effectiveness of technology-based warning systems in Southeast Asia.</p>
+                <a href="#" class="btn-primary">Read Full Article</a>
+            </div>
+            <div class="expert-avatar">
+                <div class="avatar-circle">
+                    <div class="avatar-info">
+                        <h4>Dr. Mei Lin</h4>
+                        <p>Resilience Expert</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <h2>Stay updated with the latest resilience knowledge</h2>
+            <p>Join our newsletter to receive curated resources and insights each month</p>
+            
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-small">Practical</div>
+                    <div class="logo-big">ACTION</div>
+                </div>
+                <p>Putting ingenious ideas to work</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="knowledge.html">Knowledge Hub</a></li>
+                    <li><a href="forum.html">Community Forum</a></li>
+                    <li><a href="tools.html">Tools & Training</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Impact Stories</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">All Publications</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Toolkits</a></li>
+                    <li><a href="#">Research Reports</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Email: info@practicalaction.org</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Practical Action. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
