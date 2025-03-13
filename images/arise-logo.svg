@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <!-- Background (transparent) -->
+  <rect width="600" height="500" fill="none"/>
+  
+  <!-- Logo Container - Centered higher in the frame -->
+  <g transform="translate(100, 90)">
+    <!-- Main Circle -->
+    <circle cx="200" cy="100" r="90" fill="#1A73E8" opacity="0.95"/>
+    
+    <!-- Overlapping Elements - Representing Connection and Sharing -->
+    <circle cx="170" cy="130" r="90" fill="#34A853" opacity="0.85"/>
+    <circle cx="230" cy="130" r="90" fill="#FBBC05" opacity="0.85"/>
+    
+    <!-- Digital Network Nodes -->
+    <circle cx="170" cy="70" r="8" fill="white"/>
+    <circle cx="200" cy="45" r="8" fill="white"/>
+    <circle cx="230" cy="70" r="8" fill="white"/>
+    <circle cx="160" cy="100" r="8" fill="white"/>
+    <circle cx="240" cy="100" r="8" fill="white"/>
+    <circle cx="140" cy="150" r="8" fill="white"/>
+    <circle cx="200" cy="155" r="8" fill="white"/>
+    <circle cx="260" cy="150" r="8" fill="white"/>
+    
+    <!-- Digital Network Lines -->
+    <line x1="170" y1="70" x2="200" y2="45" stroke="white" stroke-width="2"/>
+    <line x1="200" y1="45" x2="230" y2="70" stroke="white" stroke-width="2"/>
+    <line x1="170" y1="70" x2="160" y2="100" stroke="white" stroke-width="2"/>
+    <line x1="230" y1="70" x2="240" y2="100" stroke="white" stroke-width="2"/>
+    <line x1="160" y1="100" x2="140" y2="150" stroke="white" stroke-width="2"/>
+    <line x1="240" y1="100" x2="260" y2="150" stroke="white" stroke-width="2"/>
+    <line x1="140" y1="150" x2="200" y2="155" stroke="white" stroke-width="2"/>
+    <line x1="260" y1="150" x2="200" y2="155" stroke="white" stroke-width="2"/>
+    <line x1="170" y1="70" x2="230" y2="70" stroke="white" stroke-width="2"/>
+    <line x1="160" y1="100" x2="240" y2="100" stroke="white" stroke-width="2"/>
+    
+    <!-- Rising Growth Line - Representing Resilience -->
+    <path d="M 130,150 Q 160,130 180,120 T 230,95 T 270,60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="270" cy="60" r="6" fill="white"/>
+  </g>
+  
+  <!-- Logo Text -->
+  <g transform="translate(300, 290)">
+    <!-- ARISE Text -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="800" font-size="60" fill="#333333" text-anchor="middle">ARISE</text>
+  </g>
+  
+  <!-- Tagline - Now placed well below the main logo -->
+  <g transform="translate(300, 330)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#555555" text-anchor="middle">Augmented Intelligence for Resilience,</text>
+    <text x="0" y="24" font-family="Arial, sans-serif" font-size="16" fill="#555555" text-anchor="middle">Information Sharing and Empowerment</text>
+  </g>
+</svg>
