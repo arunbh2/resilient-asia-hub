@@ -158,3 +158,133 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Tools page specific functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Tab navigation
+    const tabButtons = document.querySelectorAll('.tab-button');
+    
+    if (tabButtons.length > 0) {
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all tabs
+                tabButtons.forEach(tab => tab.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Get the target section ID from the href attribute
+                const targetId = this.getAttribute('href').substring(1);
+                
+                // In a full implementation, this would show/hide sections based on the selected tab
+                console.log(`Selected tab: ${targetId}`);
+                
+                // For this prototype, we'll scroll to the section
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    }
+    
+    // Course card hover effects
+    const courseCards = document.querySelectorAll('.course-card');
+    
+    if (courseCards.length > 0) {
+        courseCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 8px 16px rgba(0,0,0,0.1)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+            });
+        });
+    }
+    
+    // Workshop registration handling
+    const registerButtons = document.querySelectorAll('.btn-register');
+    
+    if (registerButtons.length > 0) {
+        registerButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get workshop title from the parent container
+                const workshopItem = this.closest('.workshop-item');
+                const workshopTitle = workshopItem.querySelector('h3').textContent;
+                
+                // In a real implementation, this would open a registration form
+                console.log(`Registering for workshop: ${workshopTitle}`);
+                
+                // Show a temporary message
+                const notification = document.createElement('div');
+                notification.className = 'register-notification';
+                notification.textContent = `Registration form for "${workshopTitle}" would open here.`;
+                notification.style.position = 'fixed';
+                notification.style.top = '100px';
+                notification.style.left = '50%';
+                notification.style.transform = 'translateX(-50%)';
+                notification.style.backgroundColor = 'var(--pa-yellow)';
+                notification.style.color = '#000';
+                notification.style.padding = '1rem 2rem';
+                notification.style.borderRadius = '4px';
+                notification.style.zIndex = '1000';
+                notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 3000);
+            });
+        });
+    }
+    
+    // Handle toolkit downloads
+    const downloadLinks = document.querySelectorAll('.toolkit-meta a');
+    
+    if (downloadLinks.length > 0) {
+        downloadLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get toolkit title from the parent container
+                const toolkitCard = this.closest('.toolkit-card');
+                const toolkitTitle = toolkitCard.querySelector('h3').textContent;
+                
+                // In a real implementation, this would trigger a download
+                console.log(`Downloading toolkit: ${toolkitTitle}`);
+                
+                // Show a temporary message
+                const notification = document.createElement('div');
+                notification.className = 'download-notification';
+                notification.textContent = `Download started for "${toolkitTitle}"`;
+                notification.style.position = 'fixed';
+                notification.style.top = '100px';
+                notification.style.left = '50%';
+                notification.style.transform = 'translateX(-50%)';
+                notification.style.backgroundColor = 'var(--pa-green)';
+                notification.style.color = '#fff';
+                notification.style.padding = '1rem 2rem';
+                notification.style.borderRadius = '4px';
+                notification.style.zIndex = '1000';
+                notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 3000);
+            });
+        });
+    }
+});
