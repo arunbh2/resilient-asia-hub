@@ -1,0 +1,657 @@
+/* tools.css - Specific styles for the Tools & Training page */
+
+/* Hero Section */
+.tools-hero {
+    background-color: var(--pa-yellow);
+    height: auto;
+    padding: 3rem 5%;
+}
+
+.tools-hero .small-text {
+    font-family: Georgia, 'Noto Serif', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tools-hero .big-text {
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.tools-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.intro-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+    display: flex;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+.tab-button {
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.25rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: var(--pa-yellow);
+    color: #000;
+}
+
+.tab-button:hover:not(.active) {
+    background-color: #f0f0f0;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 0.5rem;
+}
+
+.stat-number {
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: 2rem;
+    color: var(--pa-yellow);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* E-Learning Section */
+.e-learning-section {
+    margin-bottom: 3rem;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: relative;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.yellow-highlight {
+    background-color: var(--pa-yellow);
+}
+
+.green-highlight {
+    background-color: var(--pa-green);
+}
+
+.blue-highlight {
+    background-color: var(--pa-blue);
+}
+
+.pink-highlight {
+    background-color: var(--pa-pink);
+}
+
+.highlight-text {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    transform: translateX(0.75rem);
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.yellow-highlight .highlight-text {
+    color: var(--pa-yellow);
+}
+
+.green-highlight .highlight-text {
+    color: var(--pa-green);
+}
+
+.blue-highlight .highlight-text {
+    color: var(--pa-blue);
+}
+
+.pink-highlight .highlight-text {
+    color: var(--pa-pink);
+}
+
+.course-content {
+    flex: 1;
+    padding-left: 1.5rem;
+}
+
+.course-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.course-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.course-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.course-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.course-rating {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow-rating {
+    background-color: rgba(255, 166, 0, 0.1);
+}
+
+.yellow-rating span {
+    color: var(--pa-yellow);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.green-rating {
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.green-rating span {
+    color: var(--pa-green);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.blue-rating {
+    background-color: rgba(27, 156, 252, 0.1);
+}
+
+.blue-rating span {
+    color: var(--pa-blue);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.pink-rating {
+    background-color: rgba(237, 106, 130, 0.1);
+}
+
+.pink-rating span {
+    color: var(--pa-pink);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Toolkits Section */
+.toolkits-section {
+    margin-bottom: 3rem;
+}
+
+.toolkits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.toolkit-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.toolkit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.toolkit-icon {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolkit-icon i {
+    font-size: 2rem;
+}
+
+.red-icon {
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.red-icon i {
+    color: var(--pa-red);
+}
+
+.green-icon {
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.green-icon i {
+    color: var(--pa-green);
+}
+
+.blue-icon {
+    background-color: rgba(27, 156, 252, 0.1);
+}
+
+.blue-icon i {
+    color: var(--pa-blue);
+}
+
+.toolkit-content {
+    padding: 1.5rem;
+}
+
+.toolkit-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.toolkit-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.toolkit-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.red-link {
+    color: var(--pa-red);
+    font-weight: bold;
+}
+
+.green-link {
+    color: var(--pa-green);
+    font-weight: bold;
+}
+
+.blue-link {
+    color: var(--pa-blue);
+    font-weight: bold;
+}
+
+/* Workshops Section */
+.workshops-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.workshop-list {
+    padding: 0.5rem 0;
+}
+
+.workshop-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.workshop-item:last-child {
+    border-bottom: none;
+}
+
+.date-box {
+    background-color: rgba(255, 166, 0, 0.1);
+    border-radius: 8px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.month {
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.day {
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+}
+
+.workshop-details {
+    flex: 1;
+}
+
+.workshop-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.workshop-details p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.workshop-action {
+    margin-left: 1.5rem;
+}
+
+.btn-register {
+    background-color: var(--pa-yellow);
+    color: #000;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #e69500;
+}
+
+.view-calendar {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+.view-calendar a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.view-calendar a:hover {
+    color: var(--pa-yellow);
+}
+
+/* Partners Section */
+.partners-section {
+    margin-bottom: 3rem;
+}
+
+.partners-showcase {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+/* Common Button Styles */
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #000;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-view-all {
+    background-color: var(--pa-yellow);
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-view-all:hover {
+    background-color: #e69500;
+}
+
+.view-all-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .toolkits-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-section {
+        flex-wrap: wrap;
+    }
+    
+    .stat-item {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    
+    .course-card {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .card-highlight {
+        width: 100%;
+        height: 8px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .highlight-text {
+        top: 1rem;
+        left: 1rem;
+        transform: none;
+    }
+    
+    .course-content {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+    
+    .course-rating {
+        top: 2.5rem;
+        right: 1.5rem;
+    }
+    
+    .workshop-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .date-box {
+        margin: 0 auto 1rem;
+    }
+    
+    .workshop-details {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .workshop-action {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .tools-hero .big-text {
+        font-size: 2rem;
+    }
+    
+    .tab-navigation {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .tab-button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+    }
+    
+    .course-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .course-actions .btn-primary,
+    .course-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
