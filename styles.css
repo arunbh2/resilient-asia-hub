@@ -357,3 +357,15 @@ footer {
         font-size: 1.75rem;
     }
 }
+.logo-tagline {
+    font-family: Georgia, 'Noto Serif', serif;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.footer-logo .logo-big {
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
